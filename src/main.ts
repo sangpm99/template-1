@@ -14,9 +14,6 @@ import { install } from "vue3-recaptcha-v2";
 import ability from "@/plugins/2.casl/ability";
 import { abilitiesPlugin } from "@casl/vue";
 
-// SignalR
-import callHubPlugin from "@/plugins/callHub";
-
 // @ts-ignore
 import JsonViewer from "vue3-json-viewer";
 import "vue3-json-viewer/dist/index.css";
@@ -36,7 +33,6 @@ app.use(abilitiesPlugin, ability, {
   useGlobalProperties: true,
 });
 
-app.use(callHubPlugin);
 app.use(JsonViewer);
 // Mount vue app
 app.mount("#app");

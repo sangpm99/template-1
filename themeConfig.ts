@@ -26,7 +26,7 @@ export const { themeConfig, layoutConfig } = defineThemeConfig({
       style: "line-height:0; color: rgb(var(--v-global-theme-primary))",
     }),
     contentWidth: ContentWidth.Boxed,
-    contentLayoutNav: AppContentLayoutNav.Vertical,
+    contentLayoutNav: AppContentLayoutNav.Horizontal,
     overlayNavFromBreakpoint: breakpointsVuetifyV3.lg - 1, // 1 for matching with vuetify breakpoint. Docs: https://next.vuetifyjs.com/en/features/display-and-platform/
     i18n: {
       enable: false,
@@ -59,7 +59,7 @@ export const { themeConfig, layoutConfig } = defineThemeConfig({
   },
   footer: { type: FooterType.Static },
   verticalNav: {
-    isVerticalNavCollapsed: true,
+    isVerticalNavCollapsed: false,
     defaultNavItemIconProps: { icon: "ri-circle-fill" },
     isVerticalNavSemiDark: false,
   },

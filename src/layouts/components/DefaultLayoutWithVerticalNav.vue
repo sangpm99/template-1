@@ -2,14 +2,12 @@
 import navItems from "@/navigation/vertical";
 import { useConfigStore } from "@core/stores/config";
 import { themeConfig } from "@themeConfig";
-import Translation from "./Translation.vue";
 
 // Components
 import Footer from "@/layouts/components/Footer.vue";
 import NavbarThemeSwitcher from "@/layouts/components/NavbarThemeSwitcher.vue";
 import UserProfile from "@/layouts/components/UserProfile.vue";
 import NavBarI18n from "@core/components/I18n.vue";
-import NavBarNotifications from "./NavBarNotifications.vue";
 
 // @layouts plugin
 import { VerticalNavLayout } from "@layouts";
@@ -60,8 +58,6 @@ watch(
           :languages="themeConfig.app.i18n.langConfig"
         />
         <NavbarThemeSwitcher class="me-2" />
-        <Translation class="me-2" />
-        <NavBarNotifications class="me-2" />
         <UserProfile />
       </div>
     </template>

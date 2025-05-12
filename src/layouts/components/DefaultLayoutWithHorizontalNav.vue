@@ -1,25 +1,21 @@
 <script lang="ts" setup>
-import navItems from '@/navigation/horizontal'
-
-import { themeConfig } from '@themeConfig'
+import navItems from "@/navigation/horizontal";
+import { themeConfig } from "@themeConfig";
 
 // Components
-import Footer from '@/layouts/components/Footer.vue'
-import NavbarThemeSwitcher from '@/layouts/components/NavbarThemeSwitcher.vue'
-import UserProfile from '@/layouts/components/UserProfile.vue'
-import NavBarI18n from '@core/components/I18n.vue'
-import { HorizontalNavLayout } from '@layouts'
-import { VNodeRenderer } from '@layouts/components/VNodeRenderer'
+import Footer from "@/layouts/components/Footer.vue";
+import NavbarThemeSwitcher from "@/layouts/components/NavbarThemeSwitcher.vue";
+import UserProfile from "@/layouts/components/UserProfile.vue";
+import NavBarI18n from "@core/components/I18n.vue";
+import { HorizontalNavLayout } from "@layouts";
+import { VNodeRenderer } from "@layouts/components/VNodeRenderer";
 </script>
 
 <template>
   <HorizontalNavLayout :nav-items="navItems">
     <!-- 👉 navbar -->
     <template #navbar>
-      <RouterLink
-        to="/"
-        class="app-logo"
-      >
+      <RouterLink to="/" class="app-logo">
         <VNodeRenderer :nodes="themeConfig.app.logo" />
 
         <h1 class="app-logo-title leading-normal">
@@ -29,11 +25,15 @@ import { VNodeRenderer } from '@layouts/components/VNodeRenderer'
       <VSpacer />
 
       <NavBarI18n
-        v-if="themeConfig.app.i18n.enable && themeConfig.app.i18n.langConfig?.length"
+        v-if="
+          themeConfig.app.i18n.enable && themeConfig.app.i18n.langConfig?.length
+        "
         :languages="themeConfig.app.i18n.langConfig"
       />
 
       <NavbarThemeSwitcher class="me-2" />
+
+      <VIcon icon="ri-search-line" class="v-icon me-2"></VIcon>
       <UserProfile />
     </template>
 
@@ -44,9 +44,6 @@ import { VNodeRenderer } from '@layouts/components/VNodeRenderer'
     <template #footer>
       <Footer />
     </template>
-
-    <!-- 👉 Customizer -->
-    <!-- <TheCustomizer /> -->
   </HorizontalNavLayout>
 </template>
 
