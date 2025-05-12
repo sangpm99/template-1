@@ -1,0 +1,12 @@
+name: Product
+
+on:
+  push:
+    branches: [ "pro" ]
+
+jobs:
+  build-and-deploy:
+    uses: nguyenhungitc/actions/.github/workflows/vuejs.yml@main
+    secrets: inherit
+    with:
+      WORKDIR_PATH: /var/www/html/2hglobalstore_com/frontend
