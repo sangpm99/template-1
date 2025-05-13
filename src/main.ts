@@ -23,6 +23,8 @@ const app = createApp(App);
 
 import "lity/dist/lity.min.css";
 
+import customConfig from "@/custom.config";
+
 // Register plugins
 registerPlugins(app);
 app.use(install, {
@@ -35,4 +37,5 @@ app.use(abilitiesPlugin, ability, {
 
 app.use(JsonViewer);
 // Mount vue app
+await customConfig();
 app.mount("#app");

@@ -1,16 +1,21 @@
 <script setup lang="ts">
-import { useAbility } from "@casl/vue";
-
-const { can } = useAbility();
+import Banner from "@/views/apps/home/homePage/Banner.vue";
+import AboutUs from "@/views/apps/home/homePage/AboutUs.vue";
+import Products from "@/views/apps/home/homePage/Products.vue";
+import Blogs from "@/views/apps/home/homePage/Blogs.vue";
 
 definePage({
   meta: {
-    action: "Read",
-    subject: "Permission.Public",
+    public: true,
   },
 });
 </script>
 
 <template>
-  <section></section>
+  <section>
+    <Banner></Banner>
+    <AboutUs></AboutUs>
+    <Products></Products>
+    <Blogs></Blogs>
+  </section>
 </template>

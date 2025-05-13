@@ -56,7 +56,7 @@ const userProfileList = [
                   {{ currentUser?.fullName }}
                 </div>
                 <div class="text-caption text-disabled">
-                  @{{ currentUser?.userName }}
+                  @{{ currentUser?.userName ?? "Guest" }}
                 </div>
               </div>
             </div>
@@ -81,6 +81,7 @@ const userProfileList = [
 
             <VListItem class="px-4">
               <VBtn
+                v-if="currentUser"
                 block
                 color="error"
                 size="small"
@@ -88,6 +89,16 @@ const userProfileList = [
                 @click.prevent="logOut"
               >
                 Logout
+              </VBtn>
+
+              <VBtn
+                v-else
+                block
+                size="small"
+                append-icon="ri-logout-box-r-line"
+                @click.prevent="logOut"
+              >
+                Login
               </VBtn>
             </VListItem>
           </PerfectScrollbar>

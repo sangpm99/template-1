@@ -26,7 +26,6 @@ import ReCaptcha from "@/components/ReCaptcha.vue";
 definePage({
   meta: {
     layout: "blank",
-    unauthenticatedOnly: true,
     public: true,
   },
 });

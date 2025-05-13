@@ -1,42 +1,50 @@
 <script lang="ts" setup>
-import { HorizontalNav } from '@layouts/components'
-import type { HorizontalNavItems } from '@layouts/types'
+import { HorizontalNav } from "@layouts/components";
+import type { HorizontalNavItems } from "@layouts/types";
 
 // ℹ️ Using import from `@layouts` causing build to hangup
 // import { useLayouts } from '@layouts'
-import { useLayoutConfigStore } from '@layouts/stores/config'
+import { useLayoutConfigStore } from "@layouts/stores/config";
 
-defineProps<{
-  navItems: HorizontalNavItems
-}>()
+interface Props {
+  navItems: HorizontalNavItems;
+  topbar: string;
+}
 
-const configStore = useLayoutConfigStore()
+const props = defineProps<Props>();
+
+const configStore = useLayoutConfigStore();
 </script>
 
 <template>
-  <div
-    class="layout-wrapper"
-    :class="configStore._layoutClasses"
-  >
+  <div class="layout-wrapper" :class="configStore._layoutClasses">
     <div
       class="layout-navbar-and-nav-container"
       :class="configStore.isNavbarBlurEnabled && 'header-blur'"
     >
+      <!-- 👉 Topbar -->
+      <div>
+        <div class="bg-primary py-1 text-center text-sm">
+          {{ topbar }}
+        </div>
+      </div>
       <!-- 👉 Navbar -->
-      <div class="layout-navbar">
+      <div class="layout-navbar layout-width">
         <div class="navbar-content-container">
           <slot name="navbar" />
         </div>
       </div>
       <!-- 👉 Navigation -->
-      <div class="layout-horizontal-nav">
+      <div class="layout-horizontal-nav layout-width">
+        <div class="gap"></div>
         <div class="horizontal-nav-content-container">
           <HorizontalNav :nav-items="navItems" />
         </div>
+        <div class="gap"></div>
       </div>
     </div>
 
-    <main class="layout-page-content">
+    <main class="layout-page-content full-width">
       <slot />
     </main>
 

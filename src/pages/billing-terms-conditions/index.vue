@@ -1,12 +1,11 @@
 <script setup lang="ts">
 definePage({
   meta: {
-    action: "Read",
-    subject: "Permission.Public",
+    public: true,
   },
 });
 </script>
 
 <template>
-  <div></div>
+  <section></section>
 </template>

@@ -188,3 +188,21 @@ html {
 .text-base * {
   color: rgba(var(--v-theme-on-background), var(--v-high-emphasis-opacity)) !important;
 }
+
+.horizontal-nav-content-container,
+.navbar-content-container,
+.footer-content-container {
+  padding-inline: 0 !important;
+}
+
+.layout-width {
+  padding: 0 10rem !important;
+}
+
+.full-width {
+  padding: 0 !important;
+}
+
+.gap {
+  height: 0.5rem;
+}

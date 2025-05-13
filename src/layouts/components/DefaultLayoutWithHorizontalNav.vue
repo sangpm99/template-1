@@ -9,18 +9,20 @@ import UserProfile from "@/layouts/components/UserProfile.vue";
 import NavBarI18n from "@core/components/I18n.vue";
 import { HorizontalNavLayout } from "@layouts";
 import { VNodeRenderer } from "@layouts/components/VNodeRenderer";
+
+const topbar = ref<string>("Open your own merch shop today. Always Free.");
 </script>
 
 <template>
-  <HorizontalNavLayout :nav-items="navItems">
+  <HorizontalNavLayout :nav-items="navItems" :topbar="topbar">
     <!-- 👉 navbar -->
     <template #navbar>
       <RouterLink to="/" class="app-logo">
         <VNodeRenderer :nodes="themeConfig.app.logo" />
 
-        <h1 class="app-logo-title leading-normal">
-          {{ themeConfig.app.title }}
-        </h1>
+        <!--        <h1 class="app-logo-title leading-normal">-->
+        <!--          {{ themeConfig.app.title }}-->
+        <!--        </h1>-->
       </RouterLink>
       <VSpacer />
 
@@ -33,7 +35,14 @@ import { VNodeRenderer } from "@layouts/components/VNodeRenderer";
 
       <NavbarThemeSwitcher class="me-2" />
 
-      <VIcon icon="ri-search-line" class="v-icon me-2"></VIcon>
+      <VTooltip text="Cart">
+        <template #activator="{ props }">
+          <IconBtn v-bind="props" class="me-2">
+            <VIcon icon="ri-shopping-bag-line" />
+          </IconBtn>
+        </template>
+      </VTooltip>
+
       <UserProfile />
     </template>
 
