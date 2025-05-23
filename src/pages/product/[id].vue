@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { requiredValidator } from "@/@core/utils/validators";
+
 import type { Product } from "@/types/home";
 import { getProducts } from "@/stores/homeStore";
 import { register } from "swiper/element/bundle";
@@ -9,9 +11,28 @@ definePage({
   },
 });
 
+interface Option {
+  name: string;
+  disabled: boolean;
+}
+
 const route = useRoute();
 const product = ref<Product>();
 const products = ref<Product[]>();
+const sizes: Option[] = [
+  { name: "XS", disabled: true },
+  { name: "S", disabled: false },
+  { name: "M", disabled: false },
+  { name: "L", disabled: false },
+  { name: "XL", disabled: false },
+  { name: "2XL", disabled: false },
+  { name: "3XL", disabled: false },
+  { name: "4XL", disabled: true },
+  { name: "5XL", disabled: true },
+  { name: "6XL", disabled: true },
+];
+
+const size = ref<string>("");
 
 onMounted(async () => {
   const params = route.params;
@@ -66,10 +87,41 @@ register();
             </VCol>
           </VRow>
         </VCol>
+
         <VCol cols="6">
-          <span class="text-h3">{{ product.productName }}</span>
-          <br />
-          <span class="text-error"><b>$99.99</b></span>
+          <VRow>
+            <VCol cols="12">
+              <span class="text-h3">{{ product.productName }}</span>
+              <br />
+              <span class="text-error text-h4"><b>$99.99</b></span>
+            </VCol>
+
+            <VCol cols="12">
+              <label>Size <span class="text-error">*</span></label>
+              <VSelect
+                :items="sizes"
+                item-title="name"
+                item-value="name"
+                v-model="size"
+                density="compact"
+                :rules="[requiredValidator]"
+              >
+                <template v-slot:item="{ props, item }">
+                  <VListItem
+                    v-bind="props"
+                    :title="item.raw.name"
+                    :disabled="item.raw.disabled"
+                  ></VListItem>
+                </template>
+              </VSelect>
+            </VCol>
+
+            <VCol cols="12">
+              <div class="d-flex">
+                <VBtn :disabled="!size">Add To Cart</VBtn>
+              </div>
+            </VCol>
+          </VRow>
         </VCol>
       </VRow>
     </div>
