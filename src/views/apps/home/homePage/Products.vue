@@ -2,9 +2,14 @@
 import { getBody, getProducts } from "@/stores/homeStore";
 import type { Body, Product } from "@/types/home";
 
+const router = useRouter();
 const body = ref<Body>();
 const products = ref<Product[]>();
 const currentTab = ref<number>(0);
+
+const onNavigateProductDetail = (id: string) => {
+  router.push({ name: "product-id", params: { id: id } });
+};
 
 onMounted(async () => {
   body.value = await getBody();
@@ -39,7 +44,10 @@ onMounted(async () => {
                 v-for="product in products"
                 :key="product.id"
               >
-                <VCard class="h-100">
+                <VCard
+                  class="h-100 cursor-pointer"
+                  @click="onNavigateProductDetail(product.id)"
+                >
                   <VCardText>
                     <div
                       :class="

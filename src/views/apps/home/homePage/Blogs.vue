@@ -2,9 +2,14 @@
 import { getBlogs, getSiteInfo, getBody } from "@/stores/homeStore";
 import type { Blog, Site, Body } from "@/types/home";
 
+const router = useRouter();
 const blogs = ref<Blog[]>([]);
 const site = ref<Site>();
 const body = ref<Body>();
+
+const onNavigateBlogDetail = (id: string) => {
+  router.push({ name: "blog-id", params: { id: id } });
+};
 
 onMounted(async () => {
   site.value = await getSiteInfo();
@@ -27,7 +32,11 @@ onMounted(async () => {
     <VRow class="d-flex justify-center">
       <VCol cols="3">
         <template v-if="site.blogs[1]">
-          <VImg :src="site.blogs[1].featuredImage"></VImg>
+          <VImg
+            :src="site.blogs[1].featuredImage"
+            class="cursor-pointer"
+            @click="onNavigateBlogDetail(site.blogs[1].id)"
+          ></VImg>
           <p class="text-center text-h4 mb-1">
             {{ site.blogs[1].postTitle }}
           </p>
@@ -48,7 +57,11 @@ onMounted(async () => {
 
       <VCol cols="6">
         <template v-if="site.blogs[0]">
-          <VImg :src="site.blogs[0].featuredImage"></VImg>
+          <VImg
+            :src="site.blogs[0].featuredImage"
+            class="cursor-pointer"
+            @click="onNavigateBlogDetail(site.blogs[0].id)"
+          ></VImg>
           <p class="text-center text-h4 mb-1">
             {{ site.blogs[0].postTitle }}
           </p>
@@ -69,7 +82,11 @@ onMounted(async () => {
 
       <VCol cols="3">
         <template v-if="site.blogs[2]">
-          <VImg :src="site.blogs[2].featuredImage"></VImg>
+          <VImg
+            :src="site.blogs[2].featuredImage"
+            class="cursor-pointer"
+            @click="onNavigateBlogDetail(site.blogs[2].id)"
+          ></VImg>
           <p class="text-center text-h4 mb-1">
             {{ site.blogs[2].postTitle }}
           </p>

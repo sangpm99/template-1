@@ -28,7 +28,11 @@ onMounted(async () => {
     <VRow>
       <VCol cols="6">
         <p class="text-h4 text-end">{{ body.aboutUs.headline2 }}</p>
-        <VImg :src="body.aboutUs.image1"></VImg>
+        <VImg
+          :src="body.aboutUs.image1"
+          class="cursor-pointer"
+          @click="onNavigateShop"
+        ></VImg>
       </VCol>
 
       <VCol cols="6">
@@ -77,7 +81,11 @@ onMounted(async () => {
 
       <VCol cols="6">
         <p class="text-h4 text-end">{{ body.aboutUs.headline1 }}</p>
-        <VImg :src="body.aboutUs.image2"></VImg>
+        <VImg
+          :src="body.aboutUs.image2"
+          class="cursor-pointer"
+          @click="onNavigateShop"
+        ></VImg>
       </VCol>
     </VRow>
   </div>

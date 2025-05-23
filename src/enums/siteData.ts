@@ -1407,22 +1407,19 @@ const site: Site = {
       headline: "Aprel",
       contents: [
         "<b>Email</b>: <a href='mailto:support@aprel.com'>support@aprel.com</a>",
+        "<b>Phone Number</b>: <a href='tel:1234567890'>1234567890</a>",
+        "<b>Address</b>: 321 Elm Street, Buffalo, NY 14203, United States",
         "<b>Support Time</b>: 9am – 5pm EST, Monday – Friday",
       ],
     },
     {
       headline: "Our Company",
       contents: [
-        "<a href='/pages/about'>About</a>",
-        "<a href='/pages/about'>Contact</a>",
-      ],
-    },
-    {
-      headline: "Category",
-      contents: [
-        "<a href='/product-category/t-shirt'>T-Shirt</a>",
-        "<a href='/product-category/hoodie'>Hoodie</a>",
-        "<a href='/product-category/sweater'>Sweater</a>",
+        "<a href='/about'>About</a>",
+        "<a href='/contact'>Contact</a>",
+        "<a href='/track-order'>Track Order</a>",
+        "<a href='/faqs'>FAQs</a>",
+        "<a href='/blogs'>Blogs</a>",
       ],
     },
     {
