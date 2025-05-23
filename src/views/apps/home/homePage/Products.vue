@@ -55,7 +55,6 @@ onMounted(async () => {
                           ? 'w-100 bg-white'
                           : 'w-100 bg-secondary'
                       "
-                      style="min-height: 200px"
                     >
                       <VImg :src="product.mainMockupURL"></VImg>
                     </div>
