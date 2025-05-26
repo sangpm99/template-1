@@ -11,9 +11,8 @@ onMounted(async () => {
 
 <template>
   <div v-if="site">
-    <VRow class="d-flex justify-space-between bg-white layout-width">
-      <div style="height: 2rem; width: 100%"></div>
-      <VCol cols="auto" class="pa-0">
+    <VRow class="d-flex flex-wrap justify-space-between bg-white layout-width">
+      <VCol cols="auto">
         <p class="mb-0 text-h4">
           {{ site.footer[0].headline }}
         </p>
@@ -37,7 +36,7 @@ onMounted(async () => {
         </VRow>
       </VCol>
 
-      <VCol cols="auto" class="pa-0">
+      <VCol cols="auto">
         <p class="mb-0 text-h4">
           {{ site.footer[1].headline }}
         </p>
@@ -60,7 +59,8 @@ onMounted(async () => {
           </VCol>
         </VRow>
       </VCol>
-      <VCol cols="auto" class="pa-0">
+
+      <VCol cols="auto">
         <p class="mb-0 text-h4">
           {{ site.footer[2].headline }}
         </p>
@@ -83,7 +83,6 @@ onMounted(async () => {
           </VCol>
         </VRow>
       </VCol>
-      <div style="height: 2rem; width: 100%"></div>
     </VRow>
 
     <VRow class="ma-0 layout-width bg-secondary">

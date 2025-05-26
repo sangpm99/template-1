@@ -29,8 +29,8 @@ const configStore = useLayoutConfigStore();
         </div>
       </div>
       <!-- 👉 Navbar -->
-      <div class="layout-navbar layout-width">
-        <div class="navbar-content-container">
+      <div class="layout-navbar">
+        <div class="navbar-content-container layout-width">
           <slot name="navbar" />
         </div>
       </div>
