@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getBody } from "@/stores/homeStore";
+import { getBody } from "@/stores/home";
 import type { Body } from "@/types/home";
 
 const router = useRouter();

@@ -5,10 +5,7 @@ import pages403 from "@images/pages/403.png";
 import miscMaskDark from "@images/misc/misc-mask-dark.png";
 import miscMaskLight from "@images/misc/misc-mask-light.png";
 import miscObj from "@images/pages/misc-404-object.png";
-import {
-  useAuthorizeStore,
-  removeLocalStorageUser,
-} from "@/stores/authorizeStore";
+import { useAuthorizeStore, removeLocalStorageUser } from "@/stores/authorize";
 
 const authThemeMask = useGenerateImageVariant(miscMaskLight, miscMaskDark);
 

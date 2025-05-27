@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Product } from "@/types/home";
-import { getProducts } from "@/stores/homeStore";
+import { getProducts } from "@/stores/home";
 
 const router = useRouter();
 const products = ref<Product[]>();

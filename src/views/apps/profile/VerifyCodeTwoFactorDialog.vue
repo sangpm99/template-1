@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { requiredValidator } from "@/@core/utils/validators";
 
-import { useUserStore } from "@/stores/accounts/userStore";
+import { useUserStore } from "@/stores/user";
 
 import Alert from "@/components/Alert.vue";
 

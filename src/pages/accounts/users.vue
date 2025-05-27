@@ -4,8 +4,8 @@ import { randomAvatarColor, copyText } from "@/utils";
 import { useAbility } from "@casl/vue";
 import { pageIndex, pageSize, pageSizeOptions } from "@/enums";
 
-import { useUserStore } from "@/stores/accounts/userStore";
-import { getLocalStorageUser } from "@/stores/authorizeStore";
+import { useUserStore } from "@/stores/user";
+import { getLocalStorageUser } from "@/stores/authorize";
 import type { PagedResponse } from "@/types";
 import type {
   UpdateUserParams,

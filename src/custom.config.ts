@@ -1,4 +1,4 @@
-import { getSiteInfo } from "@/stores/homeStore";
+import { getSiteInfo } from "@/stores/home";
 import { themeConfig } from "@themeConfig";
 import {
   staticPrimaryColor,

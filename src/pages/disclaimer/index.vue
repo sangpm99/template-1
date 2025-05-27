@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Site } from "@/types/home";
-import { getSiteInfo } from "@/stores/homeStore";
+import { getSiteInfo } from "@/stores/home";
 
 definePage({
   meta: {

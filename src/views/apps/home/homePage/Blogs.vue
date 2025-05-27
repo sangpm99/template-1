@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getBlogs, getSiteInfo, getBody } from "@/stores/homeStore";
+import { getBlogs, getSiteInfo, getBody } from "@/stores/home";
 import type { Blog, Site, Body } from "@/types/home";
 
 const router = useRouter();

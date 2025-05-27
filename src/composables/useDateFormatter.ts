@@ -1,6 +1,6 @@
 import moment from "moment";
 import "moment-timezone";
-import { getLocalStorageUser } from "@/stores/authorizeStore";
+import { getLocalStorageUser } from "@/stores/authorize";
 import type { Metadata } from "@/types/accounts/users";
 
 export function useDateFormatter() {

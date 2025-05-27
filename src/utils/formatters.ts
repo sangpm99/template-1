@@ -1,7 +1,7 @@
 import NoImage from "@/assets/images/error/no-image.jpg";
 import Ps from "@/assets/images/error/ps-file-placeholder.jpg";
 import Zip from "@/assets/images/zip-placeholder.png";
-import type { Site } from "@/types/site";
+import type { Site } from "@/types/home";
 
 export const resolveImage = (url: string | null): string => {
   const arr = url?.split(".") || [];

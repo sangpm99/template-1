@@ -7,8 +7,8 @@ import {
 import { copyText } from "@/utils";
 import { VForm } from "vuetify/components/VForm";
 
-import { useUserStore } from "@/stores/accounts/userStore";
-import { useConfigurationStore } from "@/stores/configurationStore";
+import { useUserStore } from "@/stores/user";
+import { useConfigurationStore } from "@/stores/configuration";
 import type { ChangePasswordParams } from "@/types/accounts/users";
 import type { ValidateErrors } from "@/types/authorize";
 import type { ErrorResponse } from "@/types";

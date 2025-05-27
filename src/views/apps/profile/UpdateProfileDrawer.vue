@@ -4,8 +4,8 @@ import { useNavigationDrawerEscHandler } from "@/composables";
 import { PerfectScrollbar } from "vue3-perfect-scrollbar";
 import { VForm } from "vuetify/components/VForm";
 
-import { useUserStore } from "@/stores/accounts/userStore";
-import { useConfigurationStore } from "@/stores/configurationStore";
+import { useUserStore } from "@/stores/user";
+import { useConfigurationStore } from "@/stores/configuration";
 import type { ErrorResponse } from "@/types";
 import type {
   User,

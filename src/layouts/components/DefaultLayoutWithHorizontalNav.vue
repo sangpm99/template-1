@@ -11,6 +11,10 @@ import { HorizontalNavLayout } from "@layouts";
 import { VNodeRenderer } from "@layouts/components/VNodeRenderer";
 
 const topbar = ref<string>("Open your own merch shop today. Always Free.");
+
+const onNavigationToCart = () => {
+  window.location.href = "/cart";
+};
 </script>
 
 <template>
@@ -33,15 +37,17 @@ const topbar = ref<string>("Open your own merch shop today. Always Free.");
         :languages="themeConfig.app.i18n.langConfig"
       />
 
-      <NavbarThemeSwitcher class="me-2" />
+      <!--      <NavbarThemeSwitcher class="me-2" />-->
 
-      <VTooltip text="Cart">
-        <template #activator="{ props }">
-          <IconBtn v-bind="props" class="me-2">
-            <VIcon icon="ri-shopping-bag-line" />
-          </IconBtn>
-        </template>
-      </VTooltip>
+      <VBadge content="100" max="99" class="badge-custom-padding me-10">
+        <VBtn
+          icon="ri-shopping-bag-line"
+          @click="onNavigationToCart"
+          variant="outlined"
+          class="rounded"
+          size="small"
+        ></VBtn>
+      </VBadge>
 
       <UserProfile />
     </template>

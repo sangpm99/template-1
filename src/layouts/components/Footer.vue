@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { getSiteInfo } from "@/stores/homeStore";
+import { getSiteInfo } from "@/stores/home";
 import type { Site } from "@/types/home";
 
 const site = ref<Site>();

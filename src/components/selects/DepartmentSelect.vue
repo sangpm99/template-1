@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useConfigurationStore } from "@/stores/configurationStore";
+import { useConfigurationStore } from "@/stores/configuration";
 
 // Props & Emits
 interface Props {

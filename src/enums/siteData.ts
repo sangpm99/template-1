@@ -5,24 +5,24 @@ const blogs: Blog[] = [
     id: "3",
     postTitle: "The Timeless Appeal of T-Shirts: A Wardrobe Essential",
     postContent:
-      "<strong>Introduction</strong>\n" +
-      "\n" +
-      "T-shirts have been a staple in fashion for decades, transcending generations and styles. Whether you're dressing up for a casual outing or just lounging at home, T-shirts offer a versatile, comfortable, and stylish option. At {{SITE_NAME}}, we understand the timeless appeal of T-shirts, and that’s why we’ve curated a collection that caters to every taste and occasion.\n" +
-      "\n" +
-      "<strong>The Versatility of T-Shirts</strong>\n" +
-      "\n" +
-      "One of the main reasons T-shirts are so popular is their versatility. They can be paired with jeans for a classic look, layered under a blazer for a smart-casual outfit, or worn with shorts for a laid-back vibe. T-shirts come in various styles, including crew neck, V-neck, and graphic tees, each offering a unique look that can be easily adapted to any situation.\n" +
-      "\n" +
-      "<strong>Comfort and Quality</strong>\n" +
-      "\n" +
-      "At {{SITE_NAME}}, we prioritize comfort and quality in every T-shirt we offer. Made from high-quality materials like soft cotton and breathable blends, our T-shirts ensure a comfortable fit all day long. Whether you’re running errands, working out, or relaxing at home, our T-shirts are designed to keep you comfortable.\n" +
-      "\n" +
-      "<strong>Express Yourself with Graphics and Colors</strong>\n" +
-      "\n" +
-      "T-shirts are more than just a piece of clothing; they are a form of self-expression. Our collection features a wide range of graphic T-shirts, from minimalist designs to bold, eye-catching prints. With a variety of colors and patterns available, you can easily find a T-shirt that reflects your personality and style.\n" +
-      "\n" +
-      "<strong>Conclusion</strong>\n" +
-      "\n" +
+      "<strong>Introduction</strong><br>" +
+      "<br>" +
+      "T-shirts have been a staple in fashion for decades, transcending generations and styles. Whether you're dressing up for a casual outing or just lounging at home, T-shirts offer a versatile, comfortable, and stylish option. At {{SITE_NAME}}, we understand the timeless appeal of T-shirts, and that’s why we’ve curated a collection that caters to every taste and occasion.<br>" +
+      "<br>" +
+      "<strong>The Versatility of T-Shirts</strong><br>" +
+      "<br>" +
+      "One of the main reasons T-shirts are so popular is their versatility. They can be paired with jeans for a classic look, layered under a blazer for a smart-casual outfit, or worn with shorts for a laid-back vibe. T-shirts come in various styles, including crew neck, V-neck, and graphic tees, each offering a unique look that can be easily adapted to any situation.<br>" +
+      "<br>" +
+      "<strong>Comfort and Quality</strong><br>" +
+      "<br>" +
+      "At {{SITE_NAME}}, we prioritize comfort and quality in every T-shirt we offer. Made from high-quality materials like soft cotton and breathable blends, our T-shirts ensure a comfortable fit all day long. Whether you’re running errands, working out, or relaxing at home, our T-shirts are designed to keep you comfortable.<br>" +
+      "<br>" +
+      "<strong>Express Yourself with Graphics and Colors</strong><br>" +
+      "<br>" +
+      "T-shirts are more than just a piece of clothing; they are a form of self-expression. Our collection features a wide range of graphic T-shirts, from minimalist designs to bold, eye-catching prints. With a variety of colors and patterns available, you can easily find a T-shirt that reflects your personality and style.<br>" +
+      "<br>" +
+      "<strong>Conclusion</strong><br>" +
+      "<br>" +
       "T-shirts are a timeless wardrobe essential that everyone should have. With their versatility, comfort, and ability to express individuality, they are perfect for any occasion. Explore our collection at {{SITE_NAME}} and find the perfect T-shirt to add to your wardrobe today!",
     postExcerpt:
       "T-shirts have been a staple in fashion for decades, transcending generations and styles",
@@ -34,24 +34,24 @@ const blogs: Blog[] = [
     id: "2",
     postTitle: "Elevate Your Style with Hoodies: The Ultimate Comfort Wear",
     postContent:
-      "<strong>Introduction</strong>\n" +
-      "\n" +
-      "Hoodies have become a fashion staple, blending comfort with style in a way that few other garments can. Once associated primarily with casual and athletic wear, hoodies have evolved into a versatile fashion piece that can be dressed up or down. At {{SITE_NAME}}, we offer a range of hoodies that cater to every style and occasion.\n" +
-      "\n" +
-      "<strong>Why Hoodies are a Must-Have</strong>\n" +
-      "\n" +
-      "Hoodies are known for their cozy, relaxed fit, making them the perfect choice for cool weather or lounging at home. But comfort is just one of the many reasons hoodies are a must-have in any wardrobe. They are also incredibly versatile. Pair a hoodie with jeans and sneakers for a casual look, or layer it under a leather jacket for an edgier vibe. Hoodies can even be paired with tailored trousers for a modern, streetwear-inspired outfit.\n" +
-      "\n" +
-      "<strong>Features that Make Our Hoodies Stand Out</strong>\n" +
-      "\n" +
-      "At {{SITE_NAME}}, our hoodies are crafted from high-quality fabrics, ensuring warmth and durability. With features like adjustable drawstrings, spacious kangaroo pockets, and a variety of fits, our hoodies offer both functionality and style. Whether you prefer a classic pullover or a zip-up style, we have something for everyone.\n" +
-      "\n" +
-      "<strong>Personalize Your Hoodie Experience</strong>\n" +
-      "\n" +
-      "One of the best things about hoodies is their potential for personalization. At {{SITE_NAME}}, we offer a range of colors, patterns, and designs, allowing you to express your unique style. From minimalist designs to bold prints, our collection has something to suit every taste. You can even find hoodies with inspirational quotes or graphics that resonate with you.\n" +
-      "\n" +
-      "<strong>Conclusion</strong>\n" +
-      "\n" +
+      "<strong>Introduction</strong><br>" +
+      "<br>" +
+      "Hoodies have become a fashion staple, blending comfort with style in a way that few other garments can. Once associated primarily with casual and athletic wear, hoodies have evolved into a versatile fashion piece that can be dressed up or down. At {{SITE_NAME}}, we offer a range of hoodies that cater to every style and occasion.<br>" +
+      "<br>" +
+      "<strong>Why Hoodies are a Must-Have</strong><br>" +
+      "<br>" +
+      "Hoodies are known for their cozy, relaxed fit, making them the perfect choice for cool weather or lounging at home. But comfort is just one of the many reasons hoodies are a must-have in any wardrobe. They are also incredibly versatile. Pair a hoodie with jeans and sneakers for a casual look, or layer it under a leather jacket for an edgier vibe. Hoodies can even be paired with tailored trousers for a modern, streetwear-inspired outfit.<br>" +
+      "<br>" +
+      "<strong>Features that Make Our Hoodies Stand Out</strong><br>" +
+      "<br>" +
+      "At {{SITE_NAME}}, our hoodies are crafted from high-quality fabrics, ensuring warmth and durability. With features like adjustable drawstrings, spacious kangaroo pockets, and a variety of fits, our hoodies offer both functionality and style. Whether you prefer a classic pullover or a zip-up style, we have something for everyone.<br>" +
+      "<br>" +
+      "<strong>Personalize Your Hoodie Experience</strong><br>" +
+      "<br>" +
+      "One of the best things about hoodies is their potential for personalization. At {{SITE_NAME}}, we offer a range of colors, patterns, and designs, allowing you to express your unique style. From minimalist designs to bold prints, our collection has something to suit every taste. You can even find hoodies with inspirational quotes or graphics that resonate with you.<br>" +
+      "<br>" +
+      "<strong>Conclusion</strong><br>" +
+      "<br>" +
       "Hoodies are more than just a piece of clothing; they are a statement of comfort, style, and individuality. Explore our collection of hoodies at {{SITE_NAME}} and find the perfect one to elevate your style and keep you comfortable all year round.",
     postExcerpt:
       "Hoodies have become a fashion staple, blending comfort with style in a way that few other",
@@ -63,24 +63,24 @@ const blogs: Blog[] = [
     id: "1",
     postTitle: "The Cozy Appeal of Sweater: Style Meets Comfort",
     postContent:
-      "<strong>Introduction</strong>\n" +
-      "\n" +
-      "Sweater are the unsung heroes of casual fashion, offering a perfect blend of comfort, warmth, and style. Whether you’re heading out for a morning jog, running errands, or just relaxing at home, a good sweater can keep you cozy and looking stylish. At {{SITE_NAME}}, we offer a wide selection of sweater that cater to every preference and style.\n" +
-      "\n" +
-      "<strong>The Perfect Blend of Comfort and Style</strong>\n" +
-      "\n" +
-      "sweater are known for their soft, comfortable fabric that feels great against the skin. They are ideal for layering, making them a versatile piece for any season. Pair a sweater with jeans for a casual look, or layer it over a collared shirt for a preppy style. The possibilities are endless, making sweatshirts a wardrobe essential.\n" +
-      "\n" +
-      "<strong>Features of Our Sweater </strong>\n" +
-      "\n" +
-      "At {{SITE_NAME}}, we believe that comfort should never compromise style. Our sweater are made from high-quality materials that are both soft and durable. With features like ribbed cuffs, hem, and a variety of necklines, our sweatshirts provide a perfect fit and lasting comfort. Whether you prefer a classic crew neck, a cozy hoodie style, or a trendy oversized fit, we have something for everyone.\n" +
-      "\n" +
-      "<strong>Express Your Style with Our Sweater Collection</strong>\n" +
-      "\n" +
-      "Sweater are a great way to express your personal style. Our collection at {{SITE_NAME}} includes a variety of colors, prints, and designs. From minimalist, solid colors to bold, graphic prints, you can find a sweater that suits your personality. Add a pop of color to your outfit or keep it simple with classic neutrals – the choice is yours.\n" +
-      "\n" +
-      "<strong>Conclusion</strong>\n" +
-      "\n" +
+      "<strong>Introduction</strong><br>" +
+      "<br>" +
+      "Sweater are the unsung heroes of casual fashion, offering a perfect blend of comfort, warmth, and style. Whether you’re heading out for a morning jog, running errands, or just relaxing at home, a good sweater can keep you cozy and looking stylish. At {{SITE_NAME}}, we offer a wide selection of sweater that cater to every preference and style.<br>" +
+      "<br>" +
+      "<strong>The Perfect Blend of Comfort and Style</strong><br>" +
+      "<br>" +
+      "sweater are known for their soft, comfortable fabric that feels great against the skin. They are ideal for layering, making them a versatile piece for any season. Pair a sweater with jeans for a casual look, or layer it over a collared shirt for a preppy style. The possibilities are endless, making sweatshirts a wardrobe essential.<br>" +
+      "<br>" +
+      "<strong>Features of Our Sweater </strong><br>" +
+      "<br>" +
+      "At {{SITE_NAME}}, we believe that comfort should never compromise style. Our sweater are made from high-quality materials that are both soft and durable. With features like ribbed cuffs, hem, and a variety of necklines, our sweatshirts provide a perfect fit and lasting comfort. Whether you prefer a classic crew neck, a cozy hoodie style, or a trendy oversized fit, we have something for everyone.<br>" +
+      "<br>" +
+      "<strong>Express Your Style with Our Sweater Collection</strong><br>" +
+      "<br>" +
+      "Sweater are a great way to express your personal style. Our collection at {{SITE_NAME}} includes a variety of colors, prints, and designs. From minimalist, solid colors to bold, graphic prints, you can find a sweater that suits your personality. Add a pop of color to your outfit or keep it simple with classic neutrals – the choice is yours.<br>" +
+      "<br>" +
+      "<strong>Conclusion</strong><br>" +
+      "<br>" +
       "Sweater offer the perfect combination of comfort and style, making them a must-have in any wardrobe. Discover our range of sweater at {{SITE_NAME}} and find the perfect one to keep you warm, comfortable, and stylish throughout the year.",
     postExcerpt:
       "Sweater are the unsung heroes of casual fashion, offering a perfect blend of comfort, warmth,",

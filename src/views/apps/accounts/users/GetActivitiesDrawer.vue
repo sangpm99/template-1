@@ -3,7 +3,7 @@ import { useNavigationDrawerEscHandler } from "@/composables";
 import { useDateFormatter } from "@/composables/useDateFormatter";
 import { PerfectScrollbar } from "vue3-perfect-scrollbar";
 
-import { useUserStore } from "@/stores/accounts/userStore";
+import { useUserStore } from "@/stores/user";
 import type { SearchQuery } from "@/types";
 import type { Activity } from "@/types/accounts/users";
 

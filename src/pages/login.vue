@@ -11,10 +11,7 @@ import { VForm } from "vuetify/components/VForm";
 import { useGenerateImageVariant } from "@/@core/composable/useGenerateImageVariant";
 import { requiredValidator, emailValidator } from "@/@core/utils/validators";
 
-import {
-  getLocalStorageUser,
-  useAuthorizeStore,
-} from "@/stores/authorizeStore";
+import { getLocalStorageUser, useAuthorizeStore } from "@/stores/authorize";
 import type { ErrorResponse } from "@/types";
 import type { SignInParams, ValidateErrors } from "@/types/authorize";
 

@@ -11,8 +11,8 @@ import { copyText } from "@/utils";
 import { useNavigationDrawerEscHandler } from "@/composables";
 
 import { useRoleStore } from "@/stores/accounts/roleStore";
-import { useUserStore } from "@/stores/accounts/userStore";
-import { useConfigurationStore } from "@/stores/configurationStore";
+import { useUserStore } from "@/stores/user";
+import { useConfigurationStore } from "@/stores/configuration";
 import type { SearchQuery, ErrorResponse } from "@/types";
 import type { RoleName } from "@/types/accounts/roles";
 import type { Option } from "@/types/tenant";

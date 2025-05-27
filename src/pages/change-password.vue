@@ -10,7 +10,7 @@ import { themeConfig } from "@themeConfig";
 import { VNodeRenderer } from "@layouts/components/VNodeRenderer";
 import { useGenerateImageVariant } from "@/@core/composable/useGenerateImageVariant";
 
-import { useAuthorizeStore } from "@/stores/authorizeStore";
+import { useAuthorizeStore } from "@/stores/authorize";
 import type { ErrorResponse } from "@/types";
 import type { RecoverPasswordParams, ValidateErrors } from "@/types/authorize";
 import {

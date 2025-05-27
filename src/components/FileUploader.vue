@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { resolveImage } from "@/utils/formatters";
 
-import { useFileStore } from "@/stores/fileStore";
+import { useFileStore } from "@/stores/file";
 
 // @ts-expect-error
 import lity from "lity";

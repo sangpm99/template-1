@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getSiteInfo } from "@/stores/homeStore";
+import { getSiteInfo } from "@/stores/home";
 import type { Site } from "@/types/home";
 
 definePage({

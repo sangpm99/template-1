@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useConfigurationStore } from "@/stores/configurationStore";
+import { useConfigurationStore } from "@/stores/configuration";
 const configStore = useConfigurationStore();
 const { getPlatform } = configStore;
 interface Props {

@@ -6,12 +6,11 @@
     :model-value="props.modelValue"
     :rules="[requiredValidator]"
     @update:modelValue="updateValue"
-
   ></VSelect>
 </template>
 
 <script lang="ts" setup>
-import { useConfigurationStore } from "@/stores/configurationStore";
+import { useConfigurationStore } from "@/stores/configuration";
 import { requiredValidator } from "@/@core/utils/validators";
 
 const configStore = useConfigurationStore();

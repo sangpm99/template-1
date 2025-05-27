@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useUserStore } from "@/stores/accounts/userStore";
+import { useUserStore } from "@/stores/user";
 import { copyText } from "@/utils";
 
 interface Props {

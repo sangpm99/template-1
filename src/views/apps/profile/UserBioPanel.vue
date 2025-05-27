@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { avatarText } from "@/@core/utils/formatters";
-import { useUserStore } from "@/stores/accounts/userStore";
+import { useUserStore } from "@/stores/user";
 import {
   getLocalStorageUser,
   setLocalStorageUser,
   useAuthorizeStore,
-} from "@/stores/authorizeStore";
+} from "@/stores/authorize";
 import type { Metadata, User } from "@/types/accounts/users";
 import UpdateProfileDrawer from "@/views/apps/profile/UpdateProfileDrawer.vue";
 

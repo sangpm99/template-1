@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Site } from "@/types/home";
-import { getSiteInfo } from "@/stores/homeStore";
+import { getSiteInfo } from "@/stores/home";
 
 definePage({
   meta: {
@@ -53,48 +53,6 @@ onMounted(async () => {
             shipping and delivery fees for the delivery service provided by the
             Logistic Partner.
           </p>
-          <table
-            dir="ltr"
-            style="height: 134px"
-            border="1"
-            width="649"
-            cellspacing="0"
-            cellpadding="0"
-            data-sheets-root="1"
-          >
-            <colgroup>
-              <col width="93" />
-              <col width="121" />
-              <col width="142" />
-            </colgroup>
-            <tbody>
-              <tr>
-                <td style="text-align: center">
-                  <strong>Shipping Type</strong>
-                </td>
-                <td style="text-align: center">
-                  <strong>Shipping Time</strong>
-                </td>
-                <td style="text-align: center">
-                  <strong>Shipping Cost</strong>
-                </td>
-              </tr>
-              <tr>
-                <td style="text-align: center">
-                  <strong>Free Shipping</strong>
-                </td>
-                <td style="text-align: center">25 - 30 Business days</td>
-                <td style="text-align: center">Price Based on Conditions</td>
-              </tr>
-              <tr>
-                <td style="text-align: center">
-                  <strong>Standard</strong>
-                </td>
-                <td style="text-align: center">10 - 15 Business days</td>
-                <td style="text-align: center">Price Based on Conditions</td>
-              </tr>
-            </tbody>
-          </table>
           <p>
             In the event we charge a shipping fee for the delivery of a
             purchased Product, such shipping fees will be refunded

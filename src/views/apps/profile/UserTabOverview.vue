@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useDateFormatter } from "@/composables/useDateFormatter";
-import { useUserStore } from "@/stores/accounts/userStore";
-import { getLocalStorageUser } from "@/stores/authorizeStore";
+import { useUserStore } from "@/stores/user";
+import { getLocalStorageUser } from "@/stores/authorize";
 import type { SearchQuery } from "@/types";
 import type { User } from "@/types/authorize";
 import type { Activity } from "@/types/accounts/users";

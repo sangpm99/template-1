@@ -5,8 +5,8 @@ import { PerfectScrollbar } from "vue3-perfect-scrollbar";
 import { VForm } from "vuetify/components/VForm";
 
 import { useRoleStore } from "@/stores/accounts/roleStore";
-import { useUserStore } from "@/stores/accounts/userStore";
-import { useConfigurationStore } from "@/stores/configurationStore";
+import { useUserStore } from "@/stores/user";
+import { useConfigurationStore } from "@/stores/configuration";
 import type { ErrorResponse, SearchQuery } from "@/types";
 import type { RoleName } from "@/types/accounts/roles";
 import type {

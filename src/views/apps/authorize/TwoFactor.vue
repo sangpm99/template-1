@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import {
-  getLocalStorageUser,
-  useAuthorizeStore,
-} from "@/stores/authorizeStore";
+import { getLocalStorageUser, useAuthorizeStore } from "@/stores/authorize";
 import { requiredValidator } from "@/@core/utils/validators";
 import { VForm } from "vuetify/components/VForm";
 

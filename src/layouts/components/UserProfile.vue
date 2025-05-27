@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import {
-  getLocalStorageUser,
-  useAuthorizeStore,
-} from "@/stores/authorizeStore";
+import { getLocalStorageUser, useAuthorizeStore } from "@/stores/authorize";
 import type { User } from "@/types/authorize";
 import avatar from "@images/avatars/avatar-blank.jpg";
 import { PerfectScrollbar } from "vue3-perfect-scrollbar";
